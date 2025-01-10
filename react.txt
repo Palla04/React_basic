@@ -1,0 +1,2 @@
+npx create-react-app 01basicreact         //React
+npm create vite@latest                    //Vite react
