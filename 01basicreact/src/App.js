@@ -1,8 +1,12 @@
+import Hello from './hello.js'
 function App() {
   return (
+    <>
+    <Hello/>
     <h1>
-      Hello, how are you?
+       Myself Pallabi!
     </h1>
+    </>
   );
 }
 

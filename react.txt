@@ -1,2 +1,10 @@
 npx create-react-app 01basicreact         //React
 npm create vite@latest                    //Vite react
+
+
+function name start with capital letter.
+In vite-react file name also starts with capital letter.
+But in react-app no need to start the file name with capital letter. 
+
+In vite only jsx file can run.
+But in react app both js and jsx file can run.

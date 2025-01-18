@@ -1,7 +1,11 @@
-function App() {
+import Hello from "./Hello"
 
-  return (
-    <h1>Hello myself Pallabi || Vite</h1>
+function App() {
+  return(
+    <>
+   <Hello/>
+   <h1>How are you all?</h1>
+   </>
   )
 }
 
