@@ -8,3 +8,8 @@ But in react-app no need to start the file name with capital letter.
 
 In vite only jsx file can run.
 But in react app both js and jsx file can run.
+
+
+*In React, rendering refers to the process of displaying React components (or elements)
+ onto the user interface (UI). Rendering involves converting the React components' 
+ JSX code into actual DOM elements that the browser can understand and display.*
