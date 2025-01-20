@@ -13,3 +13,23 @@ But in react app both js and jsx file can run.
 *In React, rendering refers to the process of displaying React components (or elements)
  onto the user interface (UI). Rendering involves converting the React components' 
  JSX code into actual DOM elements that the browser can understand and display.*
+
+
+const UserN = 'SNU'
+const reactElement = React.createElement(
+    'a',                                 // 1. The HTML tag to create ('a' tag in this case)
+    { href: 'https://google.com', target: '_blank' }, // 2. The props (attributes) for the element
+    'click me if you want to visit',     // 3. The first child (text content)
+    UserN                                // 4. The second child (dynamic variable content)
+);
+
+
+Explanation:
+'a': Specifies that an <a> (anchor) element will be created.
+
+{ href: 'https://google.com', target: '_blank' }: Sets the href attribute to 'https://google.com' (the URL the link points to).
+Sets the target attribute to '_blank', which ensures the link opens in a new tab.
+
+'click me if you want to visit': The first child of the anchor element is a string. This text will appear as part of the link.
+
+UserN: A dynamic variable (UserN = "Sister Nivedita University") passed as the second child of the anchor element.
