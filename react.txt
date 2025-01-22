@@ -33,3 +33,29 @@ Sets the target attribute to '_blank', which ensures the link opens in a new tab
 'click me if you want to visit': The first child of the anchor element is a string. This text will appear as part of the link.
 
 UserN: A dynamic variable (UserN = "Sister Nivedita University") passed as the second child of the anchor element.
+
+
+1. Virtual DOM
+The Virtual DOM (VDOM) is a lightweight JavaScript representation of the real DOM (Document Object Model). It allows React to optimize updates to the user interface by minimizing direct interactions with the actual DOM.
+
+How It Works:
+Virtual DOM Representation:
+
+React creates a virtual representation of the real DOM in memory using a tree structure.
+
+2.Reconciliation
+Reconciliation is the process React uses to update the DOM efficiently by determining the differences between the current Virtual DOM and the updated Virtual DOM.
+
+Steps in Reconciliation:
+Diffing Algorithm:
+
+Compares the Virtual DOM tree before and after a state or prop change.
+Identifies what has changed and where in the tree.
+
+3. 2. Fiber
+Fiber is the reimplementation of React's rendering engine, introduced in React 16. It enhances the reconciliation process by making it asynchronous, improving responsiveness and providing features like time slicing and better handling of animations and gestures.
+
+Key Features:
+Concurrency:
+
+Allows React to pause and prioritize rendering tasks to keep the app responsive.
