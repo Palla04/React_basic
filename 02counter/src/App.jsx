@@ -18,7 +18,11 @@ function App() {
       return;
     
     console.log('clicked remove', c);
-    setcounter(c-1)
+    // setcounter(c-1)
+    // setcounter(c-1)
+    setcounter(prevC => prevC-1)
+    setcounter(prevC => prevC-1)   // for remove 2 count
+
   }
   return (
     <>
