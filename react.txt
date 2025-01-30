@@ -59,3 +59,5 @@ Key Features:
 Concurrency:
 
 Allows React to pause and prioritize rendering tasks to keep the app responsive.
+
+**when we use react router there page will be refreshed so we can not use a tag (use Link).
