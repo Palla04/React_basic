@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Card({hi}){
+function Card({hi, someObj}){
     console.log(hi)
     //function Card(props){
     //console.log(props.hi)
@@ -12,7 +12,7 @@ function Card({hi}){
           className="object-cover object-center w-full rounded-md h-72 bg-gray-500"
         />
         <div className="absolute inset-0 flex flex-col items-center justify-center bg-opacity-60 rounded-md text-gray-100 space-y-4">
-          <h2 className="text-3xl font-semibold tracking-wide">{hi}</h2>
+          <h2 className="text-3xl font-semibold tracking-wide">{hi} and {someObj.age}</h2>
           <p className="text-center text-green-100">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio tempora ipsum
             soluta amet corporis accusantium aliquid consectetur eaque!

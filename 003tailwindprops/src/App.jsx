@@ -17,7 +17,7 @@ function App() {
       <h1 className='bg-blue-400 text-black p-4 rounded-xl'>Tailwind Test
       </h1>
       <Card hi='Earth' someObj={myObj} arr={newArray}/>
-      <Card hi='Universe'/>
+      <Card hi='Universe' someObj={myObj} arr={newArray}/>
     </>
   )
 }
