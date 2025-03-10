@@ -1,8 +1,14 @@
+import TodoItem from './TodoItem'
 
-const Todos = () => {
+const Todos = (props) => {
   return (
-    <div>
-        Todos Works
+    <div className='container'>
+        <h3 className='text-center text-warning my-3'>Todos List</h3>
+        {/* {props.todos} */}
+        {props.todos.map((todo)=>{
+          return <TodoItem todo={todo} key={todo.sno} onDelete={props.onDelete}/>
+        })}
+        
     </div>
   )
 }
