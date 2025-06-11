@@ -7,6 +7,7 @@ export const AddTodo = (props) => {
          e.preventDefault();  // Page will not be reloat when submit happen
          if(!title || !desc){
             alert("Title or Description cannot blank")
+            return
          }
          props.addTodo(title, desc);
     }
