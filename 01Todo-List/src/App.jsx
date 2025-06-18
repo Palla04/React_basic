@@ -1,9 +1,14 @@
 import Todos from './components/Todos';
 import Footer from './components/Footer';
 import Header from './components/Header';
+import { Routes, Route, Link } from 'react-router-dom';
 import React, {useEffect, useState} from 'react';
 import { AddTodo } from './components/AddTodo';
+import { About } from './components/About';
 import 'bootstrap/dist/css/bootstrap.min.css';  // Import Bootstrap
+
+
+
 function App() {
   let initTodo;
   if(localStorage.getItem("todos")===null){
@@ -77,9 +82,20 @@ useEffect(()=>{
        
   return (
    <>
+   
       <Header title="My TodoList" searchBar={false}/>
-      <AddTodo addTodo={addTodo}/>
-      <Todos todos={todos} onDelete={onDelete} message={message}/>
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <>
+              <AddTodo addTodo={addTodo} />
+              <Todos todos={todos} onDelete={onDelete} message={message} />
+            </>
+          }
+        />
+        <Route path="/about" element={<About/>} />
+      </Routes>
       <Footer/>
    </>
   )
